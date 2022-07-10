@@ -29,32 +29,32 @@ Flashswaps contract using Pancakeswap on BSC network.
     You can get `BSCSCAN_KEY` on [bscscan.com](https://bscscan.com).
 
 4. Deploy contract.
-
-    - Testnet
-        ```
-        npm start
-        ```
+    ```
+    npm run deploy-mainnet
+    npm run deploy-testnet
+    ```
 
 5. Verify contract.
-
-    - Testnet
-        ```
-        npm run verify
-        ```
+    ```
+    npm run verify-mainnet
+    npm run verify-testnet
+    ```
 
 ## Important
 
 If you want to deploy contract on mainnet, You must change some addresses on `PancakeFlashSwap.sol`.
 
-```solidity
-
+```diff
 contract PancakeFlashSwap {
-    address private constant PANCAKE_FACTORY = 0x6725F303b657a9451d8BA641348b6761A6CC7a17;
-    address private constant PANCAKE_ROUTER = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
+-   address private constant PANCAKE_FACTORY = 0x6725F303b657a9451d8BA641348b6761A6CC7a17;
++   address private constant PANCAKE_FACTORY = 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73;
 
-    address private constant WBNB = 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd;
-    address private constant BUSD = 0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee;
+-   address private constant WBNB = 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd;
++   address private constant WBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+-   address private constant BUSD = 0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee;
++   address private constant BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
 
 }
-
 ```
+
+
