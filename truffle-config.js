@@ -5,7 +5,13 @@ dotenv.config();
 
 module.exports = {
 	networks: {
-		testbsc: {
+		mainnet: {
+			provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'https://bsc-dataseed.binance.org/'),
+			network_id: 56,
+			skipDryRun: true,
+			networkCheckTimeout: 1000000
+		},
+		testnet: {
 			provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'https://data-seed-prebsc-1-s1.binance.org:8545'),
 			network_id: 97,
 			skipDryRun: true,

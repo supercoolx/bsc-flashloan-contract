@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Flashloan from AAVE",
   "scripts": {
-    "start": "truffle migrate --network testbsc",
-    "verify": "truffle run verify PancakeFlashSwap --network testbsc"
+    "deploy-mainnet": "truffle migrate --network mainnet",
+    "deploy-testnet": "truffle migrate --network testnet",
+    "verify-mainnet": "truffle run verify PancakeFlashSwap --network mainnet",
+    "verify-testnet": "truffle run verify PancakeFlashSwap --network testnet"
   },
   "keywords": [
     "flashloan",
-    "aave",
-    "arbitrage"
+    "pancakeswap",
+    "arbitrage",
+    "flashswap"
   ],
   "author": "supercoolx",
   "license": "ISC",
