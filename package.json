@@ -1,0 +1,24 @@
+{
+  "name": "flashloan-aave",
+  "version": "1.0.0",
+  "description": "Flashloan from AAVE",
+  "scripts": {
+    "start": "truffle migrate --network testbsc",
+    "verify": "truffle run verify PancakeFlashSwap --network testbsc"
+  },
+  "keywords": [
+    "flashloan",
+    "aave",
+    "arbitrage"
+  ],
+  "author": "supercoolx",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.10",
+    "dotenv": "^16.0.1",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.26"
+  }
+}
