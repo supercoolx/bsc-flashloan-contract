@@ -1,2 +1,0 @@
-# flashloanbsccontract
-flashloan bsc contract
