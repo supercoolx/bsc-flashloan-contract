@@ -16,6 +16,12 @@ module.exports = {
 			network_id: 97,
 			skipDryRun: true,
 			networkCheckTimeout: 1000000
+		},
+		localhost: {
+			provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'http://localhost:8545/'),
+			network_id: 56,
+			skipDryRun: true,
+			networkCheckTimeout: 1000000
 		}
 	},
 	mocha: {
